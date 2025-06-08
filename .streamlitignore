@@ -1,0 +1,8 @@
+# Ignore everything by default
+*
+
+# But don't ignore clean dataset CSV
+!data/Mental_Health_clean.csv
+
+# Don't ignore dashboard script
+!scripts/data_dashboard.py
