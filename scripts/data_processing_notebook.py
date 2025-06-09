@@ -4,7 +4,9 @@ import pandas as pd
 import numpy as np
 
 # %%
-# Load the CSV file (adjust path accordingly)
+# Load the CSV file
+# Dataset from Kaggle: 
+# https://www.kaggle.com/datasets/atharvasoundankar/mental-health-and-lifestyle-habits-2019-2024
 csv_path = "../data/Mental_Health_Lifestyle_Dataset.csv"
 df = pd.read_csv(csv_path)
 
@@ -110,6 +112,10 @@ for col in categorical_cols:
     print(f"\n=== Category counts for: {col} ===")
     print(df_clean[col].value_counts(dropna=False))
 
+
 # %%
 # Export clean dataset to a new csv to be used for visualization
 df_clean.to_csv("../data/Mental_Health_clean.csv", index=False)
+
+
+
