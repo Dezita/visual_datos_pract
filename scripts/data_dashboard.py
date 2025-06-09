@@ -15,12 +15,12 @@ df = load_data()
 
 # Title dashboard
 st.title("Mental Health and Lifestyle Data Exploration Dashboard")
-st.markdown("Explore patterns in mental health across countries, genders, lifestyles, and social interactions.")
+st.markdown("Explore patterns in mental health across countries, genders, and age.")
 
 # Define tabs
 tab1, tab2 = st.tabs([
     "Mental Health Conditions by Country",
-    "Analysis of Mental Health by Gender, Age, and Country"
+    "Analysis of Mental Health by Gender, Age and Country"
 ])
 
 # Define color palette for mental health conditions (5 categories)
@@ -80,8 +80,8 @@ with tab1:
 
 
 with tab2:
-    st.header("Analysis of Mental Health by Gender, Age, and Country")
-    st.markdown("### Explore relationships between mental health conditions, gender, age, and geography")
+    st.header("Analysis of Mental Health by Gender, Age and Country")
+    st.markdown("### Explore relationships between mental health conditions, gender, age and geography")
 
     # Gender color palette
     gender_color_map = {
