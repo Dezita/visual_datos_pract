@@ -15,7 +15,7 @@ df = load_data()
 
 # Title dashboard
 st.title("Mental Health and Lifestyle Data Exploration Dashboard")
-st.markdown("Explore patterns in mental health across countries, genders, and age.")
+st.markdown("Explore patterns in mental health across countries, genders and age.")
 
 # Define tabs
 tab1, tab2 = st.tabs([
